@@ -1,9 +1,7 @@
 // --- Live API Service ---
-// This service fetches real-world data from public APIs to power the dashboard.
 
 // --- Configuration ---
-// IMPORTANT: Replace with your own free API key from https://openweathermap.org/
-const OPENWEATHERMAP_API_KEY = 'bd5e378503939ddaee76f12ad7a97608'; 
+const OPENWEATHERMAP_API_KEY = import.meta.env.VITE_API_KEY; 
 const WEATHER_CITY_ID = '1275339'; // Mumbai, India - A major logistics hub
 
 // --- API Helper Functions ---
